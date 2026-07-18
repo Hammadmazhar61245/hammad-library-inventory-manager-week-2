@@ -179,6 +179,7 @@ def main():
             isbn = input("Enter ISBN to issue: ").strip()
             member = input("Enter member name: ").strip()
             library.issue_book(isbn, member)
+            print(f"Total books: {library.total_books()}, Issued: {library.issued_count()}, Available: {library.available_count()}")
 
         elif choice == "6":
             isbn = input("Enter ISBN to return: ").strip()
